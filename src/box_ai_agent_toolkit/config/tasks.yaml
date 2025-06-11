@@ -1,0 +1,10 @@
+box_expert_task:
+  description: >
+    Review the context you got and provide expert insights and recommendations
+    on {topic} referencing files in Box. Limit your analysis to the first five
+    files returned by Box if there are more than five.
+  expected_output: >
+    A bulleted list of five key insights on {topic} for each relevant file that
+    was analyzed. Each bulleted list should have the name of the file as it was
+    returned by Box as a header.
+  agent: box_expert

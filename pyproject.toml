@@ -1,0 +1,21 @@
+[project]
+name = "box_ai_agent_toolkit"
+version = "0.1.0"
+description = "box_ai_agent_toolkit using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "crewai[tools]>=0.120.1,<1.0.0",
+    "box-ai-agents-toolkit>=0.0.42"
+]
+
+[project.scripts]
+box_ai_agent_toolkit = "box_ai_agent_toolkit.main:run"
+run_crew = "box_ai_agent_toolkit.main:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

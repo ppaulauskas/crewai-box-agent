@@ -40,6 +40,11 @@ You can then customize the behavior of the Box agent or add additional agents to
 - Modify `src/box_ai_agent_toolkit/crew.py` to add your own logic, tools and specific args
 - Modify `src/box_ai_agent_toolkit/main.py` to add custom inputs for your agents and tasks
 
+The implementation of custom Box tools can also be modified. This project uses the [Box AI Agent Toolkit](https://pypi.org/project/box-ai-agents-toolkit/) to implement custom tools. Currently, Seach and Ask Box AI are implemented as custom tools, but you can add additional ones if you want.
+
+- Modify `src/box_ai_agent_toolkit/tools/custom_tool.py` to add new tools or modify the behavior of the agent.
+- If you add additional tools, you will also need to modify `src/box_ai_agent_toolkit/crew.py` to add the new tools to the `@agent`
+
 ## Running the Project
 
 To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
